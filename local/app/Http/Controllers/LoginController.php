@@ -45,7 +45,7 @@ class LoginController extends Controller {
 			
 		} else {
 			// echo "gagal"; exit;
-			return redirect('auth')->with('message', 'gagal login, coba ulang berkali-kali');
+			return redirect('auth')->with('message', 'gagal login, coba ulang berkali-kali sampai bisa');
 			
 		}
 		

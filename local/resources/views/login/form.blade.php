@@ -11,7 +11,7 @@
 	
 		@if(Session::has('message'))
 		
-			{{ Session::get('message') }}
+			<div class="alert alert-success">{{ Session::get('message') }}</div>
 		
 		@endif
 	
@@ -32,12 +32,12 @@
 	  <div class="form-group">
 	  
 		{!! Form::label('password', 'Password') !!}
-		{!! Form::text('password', '', ['class' => 'form-control']) !!}
+		{!! Form::password('password',['class' => 'form-control']) !!}
 	  
 	  </div>
 	  
-	  <button class="btn btn-info btn-block">Login</button>
-	  
+	  {!! Form::submit('Login', ['class' => 'btn btn-info btn-block']) !!}
+	  	  
 	  {!! Form::close(); !!}
 	  </div>
 	</div>
